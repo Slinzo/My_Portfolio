@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #e0f2f1;    
+  --foreground: #2d3748;    
+}
+
+html.dark {
+  --background: #121212;
+  --foreground: #ffffff;
+}
+
+/* Apply transitions for smooth theme switching */
+html, body {
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* Ensure body loads with a fade-in effect */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  opacity: 0; /* Start invisible */
+  transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* Apply opacity transition once loaded */
+body.loaded {
+  opacity: 1;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-floating {
+  animation: floatAnimation infinite ease-in-out 3s;
+}
+
+.perspective {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.shadow-glow {
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.timeline-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline {
+  display: flex;
+  gap: 20px;
+  animation: scrollTimeline 20s linear infinite;
+}
+
+.timeline-card {
+  width: 200px;
+  height: 250px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.timeline-card div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.6s;
+}
+
+.timeline-front {
+  background: #222;
+  color: white;
+  transform: rotateY(0deg);
+}
+
+.timeline-back {
+  background: #fbbf24;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.timeline-card:hover .timeline-front {
+  transform: rotateY(180deg);
+}
+
+.timeline-card:hover .timeline-back {
+  transform: rotateY(360deg);
+}
+
+@keyframes scrollTimeline {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.modal-content:hover {
+  transform: scale(1.05);
+}
+
+/* Parallax background effect */
+.parallax-background {
+  background-image: url('/parallax-bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
