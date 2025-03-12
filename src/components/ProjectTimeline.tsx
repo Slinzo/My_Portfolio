@@ -21,8 +21,8 @@ const projects: Project[] = [
     title: "Driving School Booking Website",
     date: "Nov 2024",
     description: "Dynamic web app with JavaScript, SQL database and Power BI integration.",
-    image: "/DSc.jpg",
-    modalImages: ["/DSc.jpg", "/DS_Menu.jpg", "/DS_Profile.jpg", "/DSs.jpg"],
+    image: "/DSc.JPG",
+    modalImages: ["/DSc.JPG", "/DS_Menu.JPG", "/DS_profile.JPG", "/DSs.JPG"],
     githubLink: "https://github.com/Slinzo/Driving-School-website-",
   },
   {
@@ -30,8 +30,8 @@ const projects: Project[] = [
     title: "Trivia Game",
     date: "May 2024",
     description: "A fun and interactive time-based trivia game built with C++",
-    image: "/VMC.jpg",
-    modalImages: ["/VMC.jpg", "/VMe.jpg", "/VMm.jpg", "/VMl.jpg"],
+    image: "/VMc.JPG",
+    modalImages: ["/VMc.JPG", "/VMe.JPG", "/VMm.JPG", "/VMl.JPG"],
     githubLink: "https://github.com/Slinzo/Via-Mzansi-Trivia-Game",
   },
   {
@@ -39,8 +39,8 @@ const projects: Project[] = [
     title: "Restaurant POS with Inventory Management",
     date: "June 2022",
     description: "A POS system with inventory management built using C# and SQL.",
-    image: "/RC.jpg",
-    modalImages: ["/RC.jpg"],
+    image: "/RC.JPG",
+    modalImages: ["/RC.JPG"],
     githubLink: "https://github.com/Slinzo/Restuarant-POS-System-",
   },
 ];
