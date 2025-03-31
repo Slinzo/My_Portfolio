@@ -37,8 +37,8 @@ export default function Home() {
       {/* Profile Image */}
       <Image
         className="rounded-full transition-transform duration-300 hover:scale-105 hover:shadow-xl mt-16"
-        src="/EPA.jpg"
-        alt="EPA"
+        src="/T10.jpg"
+        alt="T10"
         width={180}
         height={180}
         priority
@@ -47,9 +47,9 @@ export default function Home() {
       {/* Introduction */}
       <div className="relative">
         <FloatingIcons />
-        <h1 className="text-4xl font-bold mt-6">Welcome to My Portfolio</h1>
+        <h1 className="text-4xl font-bold mt-6">Hi, I&apos;m Lindani</h1>
         <p className="text-lg mt-2 max-w-lg text-gray-700 dark:text-gray-300">
-          Hi, I&apos;m Lindani. Explore my projects and learn more about me!
+          Computer Science Graduate| 📍 Durban, South Africa 
         </p>
       </div>
 

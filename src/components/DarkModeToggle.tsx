@@ -29,8 +29,8 @@ export default function DarkModeToggle() {
       document.body.style.backgroundColor = "#121212";
       document.body.style.color = "#ffffff";
     } else {
-      document.body.style.backgroundColor = "#e0f2f1";
-      document.body.style.color = "#2d3748";
+      document.body.style.backgroundColor =  "#f5f5dc";    
+      document.body.style.color = "#4a3f35";	
     }
   };
 
