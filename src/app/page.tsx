@@ -37,7 +37,7 @@ export default function Home() {
       {/* Profile Image */}
       <Image
         className="rounded-full transition-transform duration-300 hover:scale-105 hover:shadow-xl mt-16"
-        src="/T10.jpg"
+        src="/T10.JPG"
         alt="T10"
         width={180}
         height={180}
